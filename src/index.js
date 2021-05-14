@@ -14,7 +14,7 @@ function pageBackground(){
         backgroundImage: `url(${process.env.PUBLIC_URL + pictures[Math.floor(Math.random()*10)]})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        backgroundPosition: 'fixed'
+        backgroundPosition: 'scroll'
     }
 }
 function QuoteText({num}){
