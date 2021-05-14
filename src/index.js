@@ -1,17 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {quotes} from './quo';
+import {pictures} from './pictures';
+import ("./index.css")
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function Page(){
+    return <body style={pageBackground()}><QuoteBox /></body>;
+}
+
+function pageBackground(){
+    return {
+        backgroundImage: `url(${process.env.PUBLIC_URL + pictures[Math.floor(Math.random()*10)]})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'fixed'
+    }
+}
+function QuoteText({num}){
+    var temp = Math.floor(Math.random()*10);
+    return <h1 >"{quotes[num][0]}"</h1>
+}
+
+function QuoteBy({num}){
+    return <h3>{quotes[num][1]}</h3>
+}
+
+function QuoteBox(){
+    var temp = Math.floor(Math.random()*quotes.length);
+    
+    return <article>
+        <div><QuoteText num={temp}/></div>
+        <div><QuoteBy num={temp}/></div>
+    </article>
+}
+ReactDOM.render(<Page />, document.getElementById("root"));
