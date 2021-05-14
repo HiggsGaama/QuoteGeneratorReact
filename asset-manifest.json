@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/QuoteGeneratorReact/static/js/main.830c9358.chunk.js",
-    "main.js.map": "/QuoteGeneratorReact/static/js/main.830c9358.chunk.js.map",
+    "main.js": "/QuoteGeneratorReact/static/js/main.168473fe.chunk.js",
+    "main.js.map": "/QuoteGeneratorReact/static/js/main.168473fe.chunk.js.map",
     "runtime-main.js": "/QuoteGeneratorReact/static/js/runtime-main.3fd929e8.js",
     "runtime-main.js.map": "/QuoteGeneratorReact/static/js/runtime-main.3fd929e8.js.map",
     "static/js/2.36a2a26e.chunk.js": "/QuoteGeneratorReact/static/js/2.36a2a26e.chunk.js",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.3fd929e8.js",
     "static/js/2.36a2a26e.chunk.js",
-    "static/js/main.830c9358.chunk.js"
+    "static/js/main.168473fe.chunk.js"
   ]
 }
